@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(../Background.png);
+}
+
+.nav-bar {
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: lightgrey;
+}
+
+.nav-bar .nav-kiri {
+    float: left;
+    width: 240px;
+    margin: 16px 0;
+}
+
+.nav-bar .nav-kiri a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    float: left;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nav-bar .nav-kanan {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar li a {
+    text-align: center;
+    width: 100px;
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+    border-left: 2px solid rgb(94, 94, 94);
+    margin: 5px;
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: white;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: rgb(41, 41, 41);
+}
+
+.container div {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: bold;
+}
+
+.container p {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.container textarea {
+    display: block;
+    width: 100%;
+}
+
+.container label {
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+    text-align: left;
+}
+
+.container input, .container select {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container .radio-box {
+    display: inline-block;
+}
+
+.container .radio-box input {
+    width: 20px;
+}
+
+.container .radio-box label {
+    width: 100px;
+    font-weight: normal;
+    color: rgb(75, 75, 75);
+}
+
+footer {
+    background-color: #ddd;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    color: rgb(75, 75, 75);
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+ 

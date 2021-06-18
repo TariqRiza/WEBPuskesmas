@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Online Pasien Baru</title>
+    <link rel="stylesheet" href="StylePBaru.css">
+</head>
+<body>
+
+    <nav class="nav-bar cf">
+        <div class="nav-kiri">
+            <a href="../01_Beranda/Beranda.html" class="nav-home">Pendaftaran Online</a>
+        </div>
+        <div class="nav-kanan">
+            <ul class="cf">
+                <li><a href="../06_Petunjuk/Petunjuk.html">Petunjuk</a></li>
+                <li><a href="#">Lihat Antrian</a></li>
+                <li><a href="../05_Telusuri/Telusuri.html">Telusuri</a></li>
+                <li><a href="../01_Beranda/Beranda.html">Beranda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="">
+            <div>
+                <label for="no-pasien">NIK</label>
+                <input type="text" id="no-pasien">
+            </div>
+
+            <div>
+                <label for="nama-lengkap">Nama Lengkap</label>
+                <input type="text" id="nama-lengkap">
+            </div>
+
+            <div>
+                <label for="kepala-keluaraga">Nama Kepala Keluarga</label>
+                <input type="text" id="kepala-keluaraga">
+            </div>
+
+            <div class="radio-box">
+                <p>Jenis Kelamin</p>
+                <input type="radio" id="pria" name="jenisKelamin"><label for="jenisKelamin">Laki-Laki</label>
+                <input type="radio" id="wanita" name="jenisKelamin"><label for="jenisKelamin">Wanita</label>
+            </div>
+
+            <div>
+                <label for="tanngal-lahir">Tanggal Lahir</label>
+                <input type="date" id="tanggal-lahir">
+            </div>
+            
+            <div>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="kecamatan">Kecamatan</label>
+                <select name="kecamatan" id="kecamatan">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="kelurahan">Kelurahan</label>
+                <select name="kelurahan" id="kelurahan">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tanngal-kunjungan">Tanggal Kunjungan</label>
+                <input type="date" id="tanggal-kunjungan">
+            </div>
+
+            <div>
+                <label for="jenis-bayar">Jenis Bayar</label>
+                <select name="jenis-bayar" id="jenis-bayar">
+                    <option value="01">-</option>
+                    <option value="tunai">Tunai</option>
+                    <option value="bpjs">BPJS</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="no-bpjs">No.BPJS</label>
+                <input type="text" id="no-bpjs">
+            </div>
+
+            <div>
+                <button type="submit">Daftar</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        <div class="copyright">PNJ Depok 2021</div>
+    </footer>
+
+    
+</body>
+</html>
